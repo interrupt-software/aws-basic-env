@@ -2,6 +2,9 @@ variable "key_name" {
   default = "interrupt-key"
 }
 
+variable "ssh_key" {
+}
+
 variable "tags" {
   type = map
 

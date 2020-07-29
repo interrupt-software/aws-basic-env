@@ -145,10 +145,9 @@ resource aws_route_table_association "interrupt" {
 
 resource "aws_key_pair" "ssh" {
   key_name   = var.key_name
-  public_key = file("~/.ssh/interrupt_rsa.pub")
+  public_key = var.ssh_key
 }
 
-/*
 data "aws_instance" "awsvm" {
   instance_id = aws_instance.ubuntu[0].id
 }
@@ -162,4 +161,3 @@ output "public_ip" {
 output "ssh_command" {
   value = "ssh -i ~/.ssh/interrupt_rsa ubuntu@${data.aws_instance.awsvm.public_ip}"
 }
-*/
