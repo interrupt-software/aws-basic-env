@@ -18,6 +18,6 @@ variable "tags" {
     TTL          = "168"
     Terraform    = "true"
     TFE          = "false"
-    TFE_Worspace = "null"
+    TFE_Worspace = "fact"
   }
 }
