@@ -7,7 +7,7 @@
 #   --query 'sort_by(Images, &CreationDate)[].Name'
 
 provider "aws" {
-  region = "us-east-1"
+  region = "us-west-1"
 }
 
 variable "instance_names" {
